@@ -72,7 +72,7 @@ interpreter_keypoints.allocate_tensors()
 interpreter_classifier = Interpreter(model_path="./project_pose_classifier/classifier_model.tflite")
 interpreter_classifier.allocate_tensors()
 
-capture = cv2.VideoCapture("./lady_standing.mp4")
+capture = cv2.VideoCapture(0)
 
 RESOLUTION = (720, 1280)
 
