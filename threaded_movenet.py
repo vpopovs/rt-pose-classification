@@ -72,7 +72,7 @@ interpreter_keypoints.allocate_tensors()
 interpreter_classifier = Interpreter(model_path="./project_pose_classifier/classifier_model.tflite")
 interpreter_classifier.allocate_tensors()
 
-webcam_capture = cv2.VideoCapture("./lady_standing.mp4")
+capture = cv2.VideoCapture("./lady_standing.mp4")
 
 RESOLUTION = (720, 1280)
 
@@ -169,7 +169,7 @@ def main():
             keypoints_with_scores = None
             predicted_label = None
 
-        _, frame = webcam_capture.read()
+        _, frame = capture.read()
         video_frame = frame
         image = frame
 
