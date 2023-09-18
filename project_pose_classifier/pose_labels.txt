@@ -1,0 +1,4 @@
+Sitting
+Standing_arms_down
+Standing_arms_up
+T-pose
